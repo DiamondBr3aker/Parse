@@ -1,9 +1,4 @@
-# AI-Oasis
-General Use AI collection
-
-## Features
-
-### Parse
+# Parse
 Text to Speech AI Powered Search Engine
 
 
