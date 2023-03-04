@@ -30,6 +30,7 @@ function wishMe() {
 window.addEventListener('load', ()=>{
     speak("Activating Parse");
     speak("Going online");
+    speak("Welcome to Parse")
     wishMe();
 })
 
@@ -115,6 +116,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    
     speech.volume = 1;
     speech.pitch = 1;
     speech.rate = 1;
