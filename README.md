@@ -1,5 +1,11 @@
-# Parse
-Speech to Text Website
+# AI-Oasis
+General Use AI collection
+
+## Parse
+Text to speech AI powered search engine
+
+## VisualizeME
+
 
 Website can be found at: https://diamondbr3aker.github.io/AI-Oasis/
 
