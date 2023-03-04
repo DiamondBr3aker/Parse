@@ -15,19 +15,15 @@ function wishMe() {
     var hr = day.getHours();
 
     if(hr >= 0 && hr < 12) {
-        speak("Good Morning Boss");
-    }
-
-    else if(hr == 12) {
-        speak("Good noon Boss");
+        speak("Good Morning Sir");
     }
 
     else if(hr > 12 && hr <= 17) {
-        speak("Good Afternoon Boss");
+        speak("Good Afternoon Sir");
     }
 
     else {
-        speak("Good Evening Boss");
+        speak("Good Evening Sir");
     }
 }
 
@@ -57,12 +53,12 @@ function speakThis(message) {
     speech.text = "I did not understand what you said please try again";
 
     if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello Boss";
+        const finalText = "Hello Sir";
         speech.text = finalText;
     }
 
     else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me how can i help you";
+        const finalText = "I am fine sir, how can i help you";
         speech.text = finalText;
     }
 
@@ -107,7 +103,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('calculator')) {
+    else if(message.includes('calculate')) {
         window.open('Calculator:///')
         const finalText = "Opening Calculator";
         speech.text = finalText;
@@ -115,7 +111,7 @@ function speakThis(message) {
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "I found some information for " + message + " on google";
+        const finalText = "Here's what I found regarding" + message + "on google";
         speech.text = finalText;
     }
 
