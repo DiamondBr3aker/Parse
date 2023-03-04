@@ -30,7 +30,7 @@ function wishMe() {
 window.addEventListener('load', ()=>{
     speak("Activating Parse");
     speak("Going online");
-    speak("Welcome to Parse")
+    speak("Welcome to Parse");
     wishMe();
 })
 
@@ -51,7 +51,7 @@ btn.addEventListener('click', ()=>{
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "I did not understand what you said please try again";
+    speech.text = "I did not understand what you said, please try again";
 
     if(message.includes('hey') || message.includes('hello')) {
         const finalText = "Hello Sir";
@@ -74,15 +74,39 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('open bing')) {
+        window.open("https://bing.com", "_blank");
+        const finalText = "Opening Bing";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open duckduckgo')) {
+        window.open("https://duckduckgo.com/", "_blank");
+        const finalText = "Opening Duck Duck Go";
+        speech.text = finalText;
+    }
+
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram";
         speech.text = finalText;
     }
 
+    else if(message.includes('open twitter')) {
+        window.open("https://twitter.com", "_blank");
+        const finalText = "Opening twitter";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open facebook')) {
+        window.open("https://facebook.com", "_blank");
+        const finalText = "Opening facebook";
+        speech.text = finalText;
+    }
+
     else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "This is what i found on internet regarding " + message;
+        const finalText = "This is what i found on the internet regarding " + message;
         speech.text = finalText;
     }
 
@@ -105,7 +129,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('calculate')) {
-        window.open('Calculator:///')
+        window.open('ms-calculator://')
         const finalText = "Opening Calculator";
         speech.text = finalText;
     }
@@ -116,7 +140,6 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    
     speech.volume = 1;
     speech.pitch = 1;
     speech.rate = 1;
