@@ -1,6 +1,19 @@
 from flask import Flask, render_template, Response
 import cv2
 import numpy as np
+from threading import Thread
+import pyttsx3
+
+
+
+# Initialize the text-to-speech engine
+engine = pyttsx3.init()
+
+engine.setProperty('rate', 150)
+engine.setProperty('volume', 0.7)
+
+
+
 
 app = Flask(__name__)
 camera = cv2.VideoCapture(0)
@@ -61,11 +74,22 @@ def gen_frames():
                 color = colors[class_ids[i]]
                 cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
                 cv2.putText(frame, label, (x, y + 30), font, 3, color, 3)
-        
+
         ret, buffer = cv2.imencode('.jpg', frame)
         frame = buffer.tobytes()
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
+        
+        def myfunc():
+            engine = pyttsx3.init()
+            engine.say("I see a " + label)
+            engine.startLoop()
+            externalLoop()
+            engine.endLoop()
+
+        t = Thread(target=myfunc)
+        t.start()
+        
 
 
 
