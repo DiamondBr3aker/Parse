@@ -18,15 +18,6 @@
   justify-content: center;
 }
 
-.main .github {
-  color: white;
-  background: black;
-  align-items: right;
-  justify-content: right;
-  padding: 10px;
-  position: bottom;
-}
-
 .main .image-container {
   padding: 10px;
 }
