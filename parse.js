@@ -91,6 +91,12 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('open snapchat')) {
+        window.open("https://snapchat.com", "_blank");
+        const finalText = "Opening snapchat";
+        speech.text = finalText;
+    }
+
     else if(message.includes('open twitter')) {
         window.open("https://twitter.com", "_blank");
         const finalText = "Opening twitter";
