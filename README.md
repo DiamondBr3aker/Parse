@@ -17,6 +17,8 @@ Navigate back to parse.html and click the "Go Live" button in the bottom-right c
 
 Open Command Prompt and copy the path to where the main folder is located
 
-Type "python app.py", Parse is now ready
+Type cd + Path and hit enter
+
+Type "python app.py" and hit enter, Parse is now ready
 
 ### This project is licensed under the terms of the GNU General Public License 3.0.
