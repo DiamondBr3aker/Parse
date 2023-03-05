@@ -66,7 +66,7 @@ function speakThis(message) {
         const finalText = "My name is Parse";
         speech.text = finalText;
     }
-
+ 
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
@@ -106,6 +106,12 @@ function speakThis(message) {
     else if(message.includes('open facebook')) {
         window.open("https://facebook.com", "_blank");
         const finalText = "Opening facebook";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open reddit')) {
+        window.open("https://reddit.com", "_blank");
+        const finalText = "Opening reddit";
         speech.text = finalText;
     }
 
