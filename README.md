@@ -1,5 +1,5 @@
 # Parse
-Text to Speech AI Powered Search Engine
+Speech to Text AI Powered Search Engine
 
 
 Website can be found at: https://diamondbr3aker.github.io/Parse/parse.html
