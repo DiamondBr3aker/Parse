@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VisualizeMe - Feed Recognition</title>
+    <style>
+        #video {
+            width: 600px;
+            height: auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <section class="main">
+        <div class="image-container">
+            <h1>VisualizeMe</h1>
+            <p id="hi-text">I'm a Feed Recognition Software, Point Your Camera To Something</p>
+        </div>
+        <div class="video-div"> 
+            <img id="video" src="{{ url_for('video_feed') }}">
+        </div>
+    </section>
+</body>
+</html>
