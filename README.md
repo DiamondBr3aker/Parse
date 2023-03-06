@@ -17,7 +17,7 @@ Navigate back to parse.html and click the "Go Live" button in the bottom-right c
 
 Open Command Prompt and install the following dependencies: 
 
-'''
+```
 pip install Flask
 
 pip install opencv-python
@@ -26,7 +26,7 @@ pip install numpy
 
 pip install pyttsx3
 
-'''
+```
 
 Copy the path to where the main folder is located
 
