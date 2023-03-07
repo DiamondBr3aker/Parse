@@ -15,7 +15,11 @@ Install the Live Server extension published by Ritwick Dey by pressing Ctrl -> S
 
 Navigate back to parse.html and click the "Go Live" button in the bottom-right corner, your Parse should run
 
-Open Command Prompt and install the following dependencies: 
+Copy the path to where the main folder is located
+
+Type cd + copied Path and hit enter
+
+Install the following dependencies by typing the following install commands: 
 
 ```
 pip install Flask
@@ -27,10 +31,6 @@ pip install numpy
 pip install pyttsx3
 
 ```
-
-Copy the path to where the main folder is located
-
-Type cd + copied Path and hit enter
 
 Type "python app.py" and hit enter, Parse is now ready
 
