@@ -9,15 +9,17 @@ https://pjreddie.com/media/files/yolov3.weights
 
 Place YOLOv3.weights in the main folder
 
-Open the main folder inside Visual Studio Code
+Open the main folder inside Visual Studio Code, downloadable here:
+https://visualstudio.microsoft.com/free-developer-offers/
 
-Install the Live Server extension published by Ritwick Dey by pressing Ctrl -> Shift -> X and searching for "Live Server"
+Install the Live Server extension published by Ritwick Dey by pressing Ctrl -> Shift -> X and searching for "Live Server" or download here:
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
-Navigate back to parse.html and click the "Go Live" button in the bottom-right corner, your Parse should run
+Navigate back to parse.html and click the "Go Live" button in the bottom-right corner, your program should run
 
 Copy the path to where the main folder is located
 
-Type cd + copied Path and hit enter
+Open command prompt and type cd + copied Path and hit enter
 
 Install the following dependencies by typing the following install commands: 
 
